@@ -9,6 +9,8 @@ function closeMenu(){
     sideMenu.style.transform = 'translateX(16rem)';
 }
 
+sideMenu.classList.add('backdrop-blur-lg')
+
 window.addEventListener('scroll', ()=>{
     if(scrollY > 50){
         navBar.classList.add('bg-rose-50', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm', 'dark:bg-darkTheme', 'dark:shadow-white-20')
