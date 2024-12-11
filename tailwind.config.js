@@ -8,8 +8,15 @@ tailwind.config = {
             Outfit: ["Outfit", "sans-serif"],
             Ovo: ["Ovo", "serif"]
         },
-        animation:{
-            spin_slow: 'spin 6s linear infinite'
+        animation: {
+            'reverse-spin': 'reverse-spin 6s linear infinite'
+        },
+        keyframes: {
+            "reverse-spin": {
+              from: {
+                transform: 'rotate(360deg)'
+              },
+            }
         },
         colors:{
             lightHover: '#fcf4ff',
